@@ -29,4 +29,4 @@ jobs:
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D54FBBC58258463D922F6EF347AD8B5D }}
-          WebsiteRunFromPackageDeploy: '0'
+          scm-do-build-during-deployment: '1'
