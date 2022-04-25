@@ -13,7 +13,8 @@ if (-not $name) {
 }
 
 $path = Resolve-Path "."
-$body = "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+$children = Get-ChildItem -Path $path
+$body = "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.`n$children"
 
 if ($name) {
     $body = "Hello, $name. This HTTP triggered function executed successfully in $path"
