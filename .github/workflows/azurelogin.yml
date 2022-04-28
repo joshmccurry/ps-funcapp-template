@@ -2,7 +2,7 @@ on: [push]
 
 name: AzureDeploy
 
-permission:
+permissions:
     id-token: write
     contents: read
 
